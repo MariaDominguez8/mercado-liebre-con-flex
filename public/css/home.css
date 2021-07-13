@@ -1,0 +1,326 @@
+/* header */
+
+.home header {
+    background-color: #EAC926;
+    padding: 15px 0 5px 0;
+}
+
+.home header .caja-logo-busq {
+    display: flex;
+    margin: 6px 0 15px 8px;
+}
+
+.home header .logo {
+    width: 50%;
+}
+
+.home header .search {
+    width: 50%;
+    margin-left: 5px;
+}
+
+input#search {
+    width: 118px;
+    height: 33px;
+    margin-top: 4px;
+}
+
+.home header .lupa {
+    background-color: white;
+    color: gray;
+    height: 31px;
+    padding-top: 10px;
+    margin-left: -17px;
+}
+
+.home header .compra {
+    margin: 10px 0 10px 40px;
+}
+
+.home header .burger-menu {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.home header .burger-menu i {
+    background-color: #1259c3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.home header .list2 {
+    margin: 10px 0 10px 0;
+}
+
+.home header .list1, .list2 {
+    display: none;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+/* main */
+
+.home main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ebebeb;
+}
+
+.home main .banner {
+    display: none;
+}
+
+.home main img {
+    width: 100%;
+}
+
+.home main .titular {
+    font-size: 24px;
+    color: #666;
+    padding: 15px 0 15px 15px;
+}
+
+.home main .precios {
+    width: 30%;
+    font-size: 18px;
+    text-align: start;
+    color: rgb(27, 27, 27);
+    height: 26px;
+    padding-left: 14px;
+}
+
+.home main .descuentos, .descripcion {
+    font-size: 16px;
+    color: rgb(129, 125, 125);
+}
+
+.home main .descripcion {
+    display: none;
+}
+
+.home main .descuentos {
+    width: 70%;
+    padding-left: 32px;
+    padding-top: 1.8px;
+    height: 26px;
+}
+
+.home main .descuentos, .icondesc {
+    color: #39b54a;
+}
+
+/* A la caja madre de los productos aplicamos flexbox */
+
+.home main .section-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+
+/* con flexbox aparece un solo producto en modo mobile y más adelante modificamos con mediaquerys */
+
+.home main .caja-product {
+    width: 90%;
+    height: 50%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.home main article {
+    margin: 10px 0;
+}
+
+.home main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 61px;
+    margin-top: -31px;
+    /* top: -15px; */
+}
+
+.home main .product {
+    display: flex;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px 0;
+}
+
+/* footer */
+
+.home footer {
+    margin-top: 80px;
+    background-color: #fff;
+}
+
+.home footer .icon {
+    text-align: center;
+}
+
+.home footer .fa-credit-card, .fa-gift, .fa-user-shield {
+    color: #03264C;
+    font-size: 2em;
+    margin: 10px 0 10px 0;
+}
+
+.home footer p {
+    padding: 0 40px 0 40px;
+    color: rgb(129, 125, 125);
+    text-align: center;
+}
+
+.home footer h4 {
+    font-size: 15px;
+    color: #666;
+}
+
+.home footer .copy {
+    color: #666;
+    margin: 40px 0 25px 15px;
+}
+
+@media (min-width: 361px) {
+    /* header */
+    .home header .list1, .list2 {
+        display: inline;
+    }
+    .home header .burger-menu {
+        display: none;
+    }
+    /* main */
+    .home main .descripcion {
+        display: inline;
+        width: 100%;
+    }
+    .home main .product-desc {
+        height: 25px;
+        background-color: white;
+        padding-left: 31px;
+    }
+    .home main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width:768px) {
+    nav {
+        display: flex;
+    }
+    .home header .caja-logo-busq {
+        margin: 6px 0 15px 28px;
+    }
+    .home header .logo {
+        width: 43%;
+    }
+    .home header .search {
+        width: 48%;
+        margin-left: 23px;
+        margin-top: 9px;
+    }
+    input#search {
+        width: 211px;
+        height: 26px;
+    }
+    .home header .lupa {
+        height: 3px;
+        padding-top: 2px;
+    }
+    .home header .compra {
+        width: 50%;
+        height: 48.05px;
+        margin: 0;
+        text-align: center;
+        padding-top: 23px;
+    }
+    .home header .listas {
+        display: flex;
+        justify-content: space-between;
+    }
+    .home header .list1, .list2 {
+        display: flex;
+        width: 100%;
+    }
+    .home header .list1 {
+        padding-top: 10.9px
+    }
+    .home header .list2{
+        padding-right: 15px;
+    }
+    .home header a {
+        padding-left: 16px;
+    }
+    .home main {
+        margin: 0;
+        width: 100%;
+    }
+    .home main .banner {
+        display: block;
+    }
+    .home main .section-gral {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Para que aparezcan dos productos en pantalla */
+    .home main .section-products {
+        width: 100%
+    }
+    .home main .caja-product {
+        width: 46%;
+        height: 378px;
+        margin-bottom: 40px;
+    }
+    /* ---------------------- */
+    .home main section article i {
+        position: relative;
+        left: 272px;
+    }
+    .home main .product {
+        height: 56px;
+    }
+    .home main .precios {
+        width: 30%;
+        padding-left: 2px;
+    }
+    .home main .product .descuentos {
+        width: 70%;
+    }
+}
+
+/* Para que aparezcan 4 productos en pantalla */
+
+@media (min-width:1024px) {
+    .home header .compra{
+        padding-top: 26px;
+    }
+    .home main .caja-product {
+        width: 24%;
+    }
+    .home main .product-desc {
+        height: 45px;
+    }
+    .home main section article i {
+        left: 172px;
+    }
+    .home main .precios {
+        width: 54%;
+    }
+    .home main .product .descuentos{
+        padding-left: 7px;
+    }
+    
+}
